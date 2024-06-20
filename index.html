@@ -1,0 +1,222 @@
+<!DOCTYPE   html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Iphone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/css/all.css">
+  
+</head>
+<body>
+    <!-- Header -->
+        <div class="boxtop">
+            <div class="boxcenter">
+                <div class="boxtopleft">Hotline:0399955807</div>
+                <div class="boxtopright">
+                    <a href="Dangki.html">Đăng ký</a>
+                    <a href="Dangnhap.html">Đăng nhập</a>
+                    <a href="">Tư Vấn</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slide Show -->
+        <div id="slideshow">
+            <img src="slideshow/1.webp" alt="" id="hinh">
+            <i class="fa-solid fa-circle-left" onclick="prve()"></i>
+            <i class="fa-solid fa-circle-right" onclick="next()"></i>
+        </div>
+        <!-- ============ MENU -->
+        <div class="boxmenu">
+            <div class="boxcenter">
+                <ul>
+                <li><a href="">KeyBoard</a></li>  
+                <li><a href="">Mouse</a></li>
+                <li><a href="">MacBooks</a>
+                    <ul class="phan loai">
+                        <li>Pro</li>
+                    </ul></li>             
+                <li><a href="">EarPods</a>
+                    <ul class="phan loai">
+                        <li>3</li>
+                        <li>3 pro</li>
+                        <li>2</li>
+                    </ul></li>
+                <li><a href="">Iphones</a>
+                    <ul class="phan loai">
+                        <li>15</li>
+                        <li>14</li>
+                        <li>13</li>
+            </div>
+            <a href="giohang1.html"><div class="cart" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="10.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/><path d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-7 8-3-3h2V9h2v3h2l-3 3z"/></svg>
+               Số lượng: <div id="sosp"></div>
+                                    
+            </div></a>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <ul class="products">
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip1.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(1,'Iphone 12 Blue',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 12</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip2.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(2,'Iphone 11 Pink',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip3.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(3,'Iphone 11 Pro Max',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11 Pro Max</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip4.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(4,'Iphone 11 Pro Max White',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11 Pro Max</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip5.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(5,'Iphone 11 Black',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip6.webp" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(6,'Iphone 11 Red',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip7.1" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(7,'Iphone 11 White',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-item">
+                            <div class="product-top">
+                                <a href="chitietsanpham.html" class="product-thumb">
+                                    <img src="index/ip8.jpg" alt="">
+                                </a>
+                                <button class="buy-now" onclick="themvaogio(8,'Iphone 11 Emeral',2999)">Mua Ngay</button>
+                            </div>
+
+                            <div class="product-info">
+                                <a href="" class="product-cat">iphone</a>
+                                <a href="" class="product-name">iphone 11</a>
+                                <div class="product-price">$2,999</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="boxcenter2">
+                <div class="boxfooter1">
+                    <h4>Follow</h4>
+                    <div class="add mrb10">Facebook:Phát Thịnh</div>
+                    <div class="add mrb10">Zalo:0399955807</div>                
+                </div>
+                <div class="boxfooter2">
+                    <h4>Hướng dẫn</h4>
+                    <div class="add mrb10"><a href="">Điều khoản</a></div>
+                    <div class="add mrb10"><a href="">Hướng dẫn mua hàng</a></div>
+                    <div class="add mrb10"><a href="">Chính sách đổi trả</a></div>
+                    <div class="add mrb10"><a href="">Bảo mật khách hàng</a></div>
+                </div>
+                <div class="boxfooter3 mrr2">
+                    <h4>Địa chỉ</h4>
+                    <div class="add mrb10">Store 1: </div>
+                    <div class="add mrb10">Store 2: </div>
+                    <div class="add mrb10">Store 3: </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="slideshow.js"></script>
+<script src="giohang.js"></script>

@@ -1,0 +1,69 @@
+<style>
+    #frm { 
+        width: 600px; margin: auto; border: 2px solid darkcyan; padding: 20px;
+        font-size: 1.2em;
+    }
+    #frm .row { margin-bottom: 15px;}
+    #frm .txt { padding: 8px; border: 1px solid darkcyan; width: 100%; outline: none;}
+    #frm h3 { margin: 0; text-align: center;}
+    #frm #btn { width: 120px; height: 35px; background-color: darkgreen; color: wheat;} 
+    #frm #loihoten, #loihinhthucthanhtoan, #loidiachi { color:red}
+</style>
+
+<form action="" id="frm" name="frm" onsubmit="return kiemtra()">
+    <h3>FORM THANH TOÁN</h3>
+    <div class="row">
+        Họ tên <br>
+        <input class="txt" type="text" id="hoten"><b id="loihoten"></b>
+    </div>    
+    <div class="row">
+        Địa chỉ <br>
+        <input class="txt" type="text" id="diachi"><b id="loidiachi"></b>
+    </div> 
+    <div class="row">
+        Thanh toán qua<br>
+        <select class="txt" id="hinhthucthanhtoan">
+            <option value="0">Chọn cách thanh toán</option>
+            <option value="1">Tại nhà</option>
+            <option value="2">Chuyển khoản</option>
+            <option value="3">VN Pay</option>
+            <option value="4">Onle Pay</option>
+            <option value="5">Momo</option>
+        </select><b id="loithanhtoan"></b>
+    </div>
+    <div class="row">
+        Phiếu giảm giá <br>
+        <input type="radio" name="phieugg" value="0">Không
+        <input type="radio" name="phieugg" value="1">Có
+    </div> 
+    <div class="row">
+        <button id="btn" type="submit"> Thanh toán</button>
+    </div>
+</form>
+<script>
+ function kiemtra(){
+    if (document.getElementById("hoten").value.length<=6){
+        document.getElementById("loihoten").innerHTML="Nhập họ tên không đúng";
+        return false;
+    }
+    else { 
+        document.getElementById("loihoten").innerHTML="";
+    }
+    if (document.getElementById("diachi").value.length<=10){
+        document.getElementById("loidiachi").innerHTML="Nhập địa chỉ không đúng";
+        return false;
+    }
+    else { 
+        document.getElementById("loidiachi").innerHTML="";
+    }
+    if (document.getElementById("hinhthucthanhtoan").value==0){
+        document.getElementById("loithanhtoan").innerHTML="Chưa chọn thanh toán";
+        return false;
+    }
+    else { 
+        document.getElementById("loithanhtoan").innerHTML="";
+    }
+
+    return false;
+ }   
+</script>
